@@ -1,0 +1,11 @@
+mode: set
+test_mercado_libre/usecase/coupon/calculate.go:16.65,22.32 4 1
+test_mercado_libre/usecase/coupon/calculate.go:32.2,32.14 1 1
+test_mercado_libre/usecase/coupon/calculate.go:22.32,25.20 2 1
+test_mercado_libre/usecase/coupon/calculate.go:29.3,29.39 1 1
+test_mercado_libre/usecase/coupon/calculate.go:25.20,26.9 1 1
+test_mercado_libre/usecase/coupon/calculate.go:35.47,38.26 2 1
+test_mercado_libre/usecase/coupon/calculate.go:42.2,42.37 1 1
+test_mercado_libre/usecase/coupon/calculate.go:46.2,46.11 1 1
+test_mercado_libre/usecase/coupon/calculate.go:38.26,40.3 1 1
+test_mercado_libre/usecase/coupon/calculate.go:42.37,44.3 1 1
