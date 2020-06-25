@@ -8,5 +8,5 @@ import (
 func main() {
 	os.Setenv("api_mercado_libre", "https://api.mercadolibre.com/items/")
 
-	handler.Routes().Run()
+	handler.Routes().Run(":8800")
 }

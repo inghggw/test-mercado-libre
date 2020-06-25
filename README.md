@@ -17,10 +17,13 @@
 - En el directorio /capture, se dejan evidencias del consumo de servicios y ejeción de los test y el coverage. Adicional se adjunta las collections de postman utilizadas.
 - Ejecutar el siguiente comando para iniciar el servicio web en port:8080 (linux) y 8000(windows):
   - **make dev**
+  - En caso de no tener instalado en la máquina local make, se corre el servidor con el siguiente comando:
+  - **go run httpd/main.go**
 
 **Nivel 3**
 
-- Url Api publicada: 
+- Url Api publicada: http://35.239.16.146:8800
+- **Request POST: http://35.239.16.146:8800/coupon**
 
 **Ejecutar tests y coverage**
 
