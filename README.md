@@ -27,8 +27,12 @@
 
 **Ejecutar tests y coverage**
 
-- make test
+- **make test**
+- En caso de no tener instalado make, se deben correr los siguientes comandos:
+  - **go test -coverprofile fmtcoverage.html fmt**
+  - **go test -coverprofile cover.out ./...**
+  - **go tool cover -html=cover.out**
 
 **Autor**
 
-Ing. Pedag. MEng. Henry Giovanny Gonzalez Waltero - © 2020.
+Ing. Pedag. MEng. Henry Giovanny Gonzalez Waltero - © Junio-2020.
