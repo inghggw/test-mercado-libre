@@ -41,12 +41,50 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/coupon",
+					"raw": "http://localhost:8800/coupon",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8800",
+					"path": [
+						"coupon"
+					],
+					"query": [
+						{
+							"key": "amount",
+							"value": "prueba",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Coupon items existen PUBLIC",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"item_ids\": [\n        \"MCO492245833\",\n        \"MCO492245834\",\n        \"MCO492245835\",\n        \"MCO556943801\"\n    ],\n    \"amount\": 350000.00\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://35.239.16.146:8800/coupon",
+					"protocol": "http",
+					"host": [
+						"35",
+						"239",
+						"16",
+						"146"
+					],
+					"port": "8800",
 					"path": [
 						"coupon"
 					],
@@ -97,12 +135,43 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/coupon",
+					"raw": "http://localhost:8800/coupon",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8800",
+					"path": [
+						"coupon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Coupon items no existe PUBLIC",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"item_ids\": [\n        \"MLA1\",\n        \"MLA2\",\n        \"MLA3\",\n        \"MLA4\",\n        \"MLA5\"\n    ],\n    \"amount\": 500.00\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://35.239.16.146:8800/coupon",
+					"protocol": "http",
+					"host": [
+						"35",
+						"239",
+						"16",
+						"146"
+					],
+					"port": "8800",
 					"path": [
 						"coupon"
 					]
@@ -125,12 +194,43 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/coupon",
+					"raw": "http://localhost:8800/coupon",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8800",
+					"path": [
+						"coupon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Coupon insuficiente items existen PUBLIC",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"item_ids\": [\n        \"MCO492245833\",\n        \"MCO492245834\",\n        \"MCO492245835\",\n        \"MCO556943801\"\n    ],\n    \"amount\": 5500.00\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://35.239.16.146:8800/coupon",
+					"protocol": "http",
+					"host": [
+						"35",
+						"239",
+						"16",
+						"146"
+					],
+					"port": "8800",
 					"path": [
 						"coupon"
 					]
