@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	res := coupon.Calculate(data.Items, 500.00)
+	res, _ := coupon.Calculate(data.Items, 500.00)
 	fmt.Println(res)
 }

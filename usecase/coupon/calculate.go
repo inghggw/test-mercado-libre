@@ -1,11 +1,9 @@
 package coupon
 
-import ("sort")
-
-// List with item coupon
-type List struct {
-	ItemID string
-}
+import (
+	"sort"
+	"test_mercado_libre/domain/model"
+)
 
 type kv struct {
 	Key   string
@@ -13,9 +11,10 @@ type kv struct {
 }
 
 // Calculate get items apply cuopon by amount
-func Calculate(items map[string]float64, amount float64) []List {
-	var lists []List
+func Calculate(items map[string]float64, amount float64) ([]model.List, float64) {
+	var lists []model.List
 	var sum float64
+	var total float64
 
 	itemsSort := sortItems(items)
 
@@ -26,10 +25,11 @@ func Calculate(items map[string]float64, amount float64) []List {
 			break
 		}
 
-		lists = append(lists, List{row.Key})
+		lists = append(lists, model.List{row.Key})
+		total += row.Value
 	}
 
-	return lists
+	return lists, total
 }
 
 func sortItems(items map[string]float64) []kv {
